@@ -2,7 +2,7 @@
 
 Wavegraph is a graph-based clustering for GW search with coherent Waveburst
 
-## Instruction fors graph production
+## Instructions for graph production
 
 ### Template signal generation and preconditioning
 
@@ -141,13 +141,13 @@ wggraph     --input-files data/clusters_example_longburst.hdf5 \
 
 * Cluster generation:
 ```
-wgcluster_pipe --input-files files*.hdf5 --argument-file data/demo_args.txt --sim-dir sim
+wgclusters_pipe --input-files files*.hdf5 --argument-file data/demo_args.txt --sim-dir sim
 ```
 * For CBC sources:
 ```
 wggraph --input-files data/clusters_cbc_template_test.hdf5 \
-        --output-file data/graph_cbc_template_test.txt \
-	    --log debug
+		--output-file data/graph_cbc_template_test.txt \
+		--log debug
 ```
 * For generic waveforms:
 ```
